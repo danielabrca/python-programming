@@ -14,13 +14,15 @@ pos_mean, neg_mean = 0, 0
 for temperature in temperature_readings:
     #checking condition
     if temperature >= 0:
-        pos_sum = pos_sum + temperature
+        pos_sum += temperature
         pos_count += 1
         pos_mean = pos_sum / pos_count
     else:
-        neg_sum = neg_sum + temperature
+        neg_sum += temperature
         neg_count += 1
         neg_mean = neg_sum / neg_count
 
 print('Average of positive readings:', round(pos_mean, 1), 'degrees')
 print('Average of negative readings:', round(neg_mean, 1), 'degrees')
+
+#colocar o calculo da media dentro do print, dentro do round
