@@ -1,28 +1,48 @@
-'''
-#1 - reversing a list without create a copy of it
-my_list = [1, 2, 3, 4, 5]
-#call the method .reverse()
-my_list.reverse()
-print(my_list)
-
-#2 - reversing a list creating a copy of it slicing the list
-my_list = [1, 2, 3, 4, 5] 
-reversed_list = my_list[::-1]
-print(reversed_list)
-
-#3 - reversing a list using the builtin reversed function, it will neither reverse the list in place (option 1)nor it will create a copy (option 2)
-my_list = [1, 2, 3, 4, 5]
-reversed_list = list(reversed(my_list))
-'''
-
-#4 - in this function we are starting at the last element in my_list and appending it as the first element
-# in result, the list that will show the reversal. 
 def reverse_list(my_list):
-    new_list = []
-    lenght = len(my_list) - 1
-    while lenght >= 0:
-        new_list.append(my_list[lenght])
-        lenght -= 1
-    return new_list
+    result = []
+    idx = len(my_list) - 1
+    while idx >= 0:
+        result.append(my_list[idx])
+        idx -= 1
+    
+    return result
 
-print(reverse_list([1, 2, 3, 4, 5]))
+#calling reverse_string
+'''
+print(reverse_list([1,2,3,4,5]))
+
+new_list = reverse_list(['a','b','c','d','e'])
+
+print(new_list)
+
+classmates = ['emma', 'chizea', 'daniela']
+
+print(reverse_list(classmates))
+'''
+
+def encode_string(string):
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'
+    'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+    result = ''
+    for character in string:
+        for idx in range(len(letters)):
+            if character == letters[idx]:
+                result += str(idx + 1)
+                
+    return result
+
+#print(encode_string('happy'))
+
+def pivot_split(my_list, my_num):
+    left = []
+    right = []
+    for num in my_list:
+        if num < my_num:
+            left.append(num)
+        else:
+            right.append(num)
+    
+    return [left, right]
+
+print(pivot_split([12,7,8,15,3,9,11,-7], 8))
