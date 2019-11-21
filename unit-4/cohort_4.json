@@ -1,0 +1,48 @@
+{
+    "class": "Cohort 4",
+    "start": "2019-10-16",
+    "end": "2019-12-18",
+    "students": [
+        {
+            "Name": "Daniela",
+            "job": "Finance"    
+        },
+        {
+            "Name": "Allaina",
+            "job": "Marketing"    
+        },
+        {
+            "Name": "Christina",
+            "job": "IT"    
+        },
+        {
+            "Name": "Clark",
+            "job": "Finance"    
+        },
+        {
+            "Name": "Emma",
+            "job": "Finance"    
+        },
+        {
+            "Name": "Julian",
+            "job": "Finance"    
+        },
+        {
+            "Name": "Keerthi",
+            "job": "Finance"    
+        },
+        {
+            "Name": "Kyle",
+            "job": "Finance"    
+        },
+        {
+            "Name": "Sahil",
+            "job": "Finance"    
+        },
+        {
+            "Name": "Shilaj",
+            "job": "Finance"    
+        }
+    ]
+}
+
